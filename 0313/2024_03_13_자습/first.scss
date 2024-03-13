@@ -1,0 +1,37 @@
+#stdImg
+
+{
+    $--stdImgW : 100px;
+    $--stdImgH : 100px;
+}
+#conlinkImg
+{
+    $--stdImgW : 60px;
+    $--stdImgH : 60px;
+
+
+    #googleLinkImg ,#naverLinkImg
+    {
+        width : $--stdImgW;
+        height: $--stdImgH;
+    }
+
+
+}
+body
+{
+    font-family: Arial, sans-serif;
+    margin : 20px;
+}
+
+h1
+{
+    color : #3498db;
+}
+
+p
+{
+
+    color :#333;
+}
+

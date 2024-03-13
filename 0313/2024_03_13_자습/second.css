@@ -1,0 +1,23 @@
+#conlinkImg #googleLinkImg, #conlinkImg #naverLinkImg {
+  width: 60px;
+  height: 60px;
+}
+
+
+ /* #googleLinkImg {
+  width: 60px;
+  height: 60px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #3498db;
+}
+
+p {
+  color: #333;
+}
