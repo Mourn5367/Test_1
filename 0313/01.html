@@ -7,7 +7,7 @@
     <title>
         첫 번째 작성 문서
     </title>
-
+    
     <Style>
         h1
             {
@@ -17,20 +17,29 @@
             }
     </Style>
 
-    <!-- <Script>
-       
-       var schoolName = "한국 폴리텍 대학 서울 정수 캠퍼스";
-       document.write(<h1>schoolName</h1>);
-    </Script> -->
+    <Script>
+        
+        function test1( )
+        {   
+            var schoolName = "한국 폴리텍 대학 서울 정수 캠퍼스";
+        document.getElementById("schoolText").innerHTML = schoolName;
+        }      
+        window.onload = test1;
+    </Script>
 </head>
 
    
 <body>
-    
-    <h1>
-        dd
-       <!-- 학교명과 캠퍼스명 기입 -->
+    <h1 id="schoolText" >
     </h1>
+    <!-- <h1>
+        <script>
+
+            
+        
+        </script>
+       
+    </h1> -->
 
 </body>
 </html>
