@@ -1,21 +1,25 @@
-#stdImg
+// #stdImg
 
+// {
+//     $stdImgW : 100px;
+//     $stdImgH : 100px;
+// }
+#conLinkImg
 {
-    $--stdImgW : 100px;
-    $--stdImgH : 100px;
-}
-#conlinkImg
-{
-    $--stdImgW : 60px;
-    $--stdImgH : 60px;
+    $stdImgW : 50px;
+    $stdImgH : 50px;
 
 
-    #googleLinkImg ,#naverLinkImg
+    #googleLinkImg
     {
-        width : $--stdImgW;
-        height: $--stdImgH;
+        width : $stdImgW;
+        height: $stdImgH;
     }
-
+    #naverLinkImg
+    {
+        width : $stdImgW;
+        height: $stdImgH;
+    }
 
 }
 body

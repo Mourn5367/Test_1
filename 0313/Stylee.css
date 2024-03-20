@@ -1,0 +1,14 @@
+h1
+{
+position: relative; /* 위치를 상대적으로 설정 */
+z-index: 1; /* 다른 요소보다 앞에 배치 */
+}
+.catImg
+{
+    background-image: url("http://www.mdilbo.com/lib/thumb.html?type=file&src=202311/08/20231108185818993111.jpg&w=700");
+    background-size: contain;
+    background-attachment : scroll;
+    height: 50vh; 
+    position: relative; /* 위치를 상대적으로 설정 */
+    z-index: 0; /* 다른 요소보다 앞에 배치 */
+}
