@@ -6,9 +6,12 @@ z-index: 1; /* 다른 요소보다 앞에 배치 */
 .catImg
 {
     background-image: url("http://www.mdilbo.com/lib/thumb.html?type=file&src=202311/08/20231108185818993111.jpg&w=700");
-    background-size: contain;
-    background-attachment : scroll;
-    height: 50vh; 
-    position: relative; /* 위치를 상대적으로 설정 */
-    z-index: 0; /* 다른 요소보다 앞에 배치 */
+    background-size: cover;
+    background-position: center; 
+    opacity: 0.7;
+    position: absolute; /* 절대 위치 지정 */
+    top: 0; /* 부모 요소의 맨 위에 배치 */
+    left: 0; /* 부모 요소의 맨 왼쪽에 배치 */
+    right: 0; /* 부모 요소의 맨 오른쪽에 배치 */
+    bottom: 0; /* 부모 요소의 맨 아래에 배치 */
 }
