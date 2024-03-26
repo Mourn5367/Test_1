@@ -1,0 +1,23 @@
+a
+{
+    color : rgb(255, 0, 0);
+    text-decoration:double
+}
+
+a:visited
+{
+    color : rgb(255, 0, 157) ;
+    text-decoration: none;
+}
+
+.specific-anchor
+{
+    color : yellow;
+    text-decoration: overline;
+}
+
+.specific-anchor:visited
+{
+    color : green;
+    text-decoration: none;
+}
