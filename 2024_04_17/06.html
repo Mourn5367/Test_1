@@ -7,16 +7,32 @@
     <style>
         h1:hover
         {
-            color : rgba(255, 0, 0, 0.700);
+            color : rgba(255, 0, 0, 0.7);
         }
         h1:active
         {
             color : rgba(0, 255, 0, 0.7);
         }
+
+        input :enabled
+        {
+            background: rgba(66, 34, 182, 0.651)
+        }
+        input :disabled
+        {
+            background: rgba(141, 137, 137, 0.7);
+        }
+        input :focus
+        {
+            background: rgba(255, 166, 0, 0.747);
+        }
     </style>
 </head>
 <body>
     <h1>반응 선택자</h1>
-
+    <form action="">
+        사용가능:    <input type="text" size="25"><br><br>
+        사용 불가능: <input type="text" size="25" disabled ="disabled"><br><br>
+    </form>
 </body>
 </html>
