@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin : 0;
+            padding : 0;
+        }
+        body
+        {
+            width : 960px;
+            margin : 0 auto;
+            overflow: hidden;
+        }
+        #menu
+        {
+            width : 260px;
+            float : right;
+
+        }
+        #section
+        {
+            width : 700px;
+            float : left;
+        }
+
+        li
+        {
+            list-style: none;
+        }
+        /* 소형 디바이스인 경우 스타일 */
+        @media screen and (max-width : 767px )
+        {
+            body{
+                width: auto;
+            };    
+            #menu{
+                width : auto;
+                float : none;
+            }
+            #section{
+                width : auto;
+                float : none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id = "menu">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </div>
+    <div id = "section">
+        <h1>반응형 웹 패턴 2</h1>
+        <p> 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam architecto, quaerat, fuga culpa facere labore voluptatibus laboriosam numquam harum ea distinctio illo consequatur quo natus eum. Tenetur, perspiciatis cupiditate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, repudiandae, alias repellendus explicabo quidem porro sunt dolorem velit, ut magnam molestiae optio! Sint enim possimus tenetur inventore veniam voluptatibus error.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus fuga quibusdam delectus incidunt ducimus non ab qui consectetur. Odio assumenda doloribus numquam saepe tenetur! Dolorem suscipit assumenda in ex.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fugiat laudantium beatae doloribus corporis quo vel consequuntur rem nemo, quis commodi nihil deserunt dolorem autem alias quaerat cupiditate corrupti laborum.
+        </p>
+    </div>
+</body>
+</html>
