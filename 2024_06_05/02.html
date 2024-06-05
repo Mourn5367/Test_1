@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let r = 7;
+        let circum = 2 * Math.PI * r;
+        let area = Math.PI * Math.pow(r,2);
+        let sel = prompt("1. 원 넓이\n2. 원 둘레");
+        if (sel == 2)
+        {
+            alert(`반지름이 ${r}㎝인 원의 둘레는 ${Math.round(circum)}㎝입니다.`);
+        }
+        else if (sel == 1)
+        {
+            alert(`반지름이 ${r}㎝인 원의 넓이는 ${Math.round(area)}㎠입니다.`);
+        }
+        else
+        {
+            alert("1 또는 2로 입력해줘");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
