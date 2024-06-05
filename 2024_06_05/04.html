@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    let date = new Date();
+
+    let year = date.getFullYear();
+    let inputYear = parseInt(prompt("출생년도를 입력하시오"));
+    let age = year - inputYear;
+    let grade = "";
+    
+    grade = age <= 19 ? "청소년" : "성인";
+    // if ( age <= 19)
+    // {
+    //     grade = "청소년";
+    // }
+    // else
+    // {
+    //     grade = "성인";
+    // } 
+
+    alert(`당신의 나이는 ${age} 이므로 ${grade}입니다`);
+</script>
+<body>
+    
+</body>
+</html>
