@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        let goal = parseFloat(prompt("1 부터 입력한 값까지 합계 구하기", "정수만 입력"));
+        let sum = 0;
+        if (!isNaN(goal))
+        {
+            if (goal%1 == 0)
+            {
+                for (let i = 1; i <= goal; i++)
+            {
+                sum += i;
+            }   
+            alert(`1부터 ${goal}까지 총 합계는 ${sum}입니다.`);
+            }
+            else
+            {
+                alert("정수만 입력하라고 !!!!!!");
+            }
+        }
+        else
+            alert("숫자만 입력하라고 !!!!!!");
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
