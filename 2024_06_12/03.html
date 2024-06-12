@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let num;
+        let time;
+        while(isNaN(num))
+        {
+            num = parseInt(prompt("할것"));
+        }
+        while(isNaN(time))
+        {
+            time = parseInt(prompt("횟수"));
+        }
+        // do{num = parseInt(prompt("할것"));}while(isNaN(num))
+        // do{time = parseInt(prompt("횟수"));}while(isNaN(time))
+        function powerTest(x,n)
+        {
+            let result = Math.pow(x,n)
+            return Math.pow(x,n);
+        }
+        alert(`${num}을(를) ${time}제곱승한 결과는 ${powerTest(num,time)}`);
+        alert(powerTest(num,time));
+        alert(Math.pow(num,time));
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
