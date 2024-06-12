@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    let num = parseInt(prompt("초기값"));
+    let time = parseInt(prompt("횟수"));
+    function anonymousCallten(temp, n)
+    {
+        for (let i = num ; i <= n; i++)
+        {
+            temp(i,n);
+        }
+    }
+
+    let temp = function(num,time)
+    {
+        alert(`익명함수 호출됨 ${num}/${time}`);
+    }
+
+    anonymousCallten(temp,time);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
