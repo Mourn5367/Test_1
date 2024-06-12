@@ -11,13 +11,21 @@
     {
         제품명: "먹태 새우깡",
         유형: '유탕제품',
-        성분: '밀가루, 팜유, 먹태, 마요네즈, 청양고추',
+        성분: { 주성분1: "밀가루", 주성분2: "팜유", 주성분3: "먹태", 주성분4:"마요네즈", 주성분5: "청양고추"},
         원산지: '대한민국'
     };
 
     for(let i in product)
     {
-        alert(`${i}: ${product[i]}`);
+        if (typeof(product[i]) === 'object')
+        {
+            for (let k in product[i])
+            alert(`${k}: ${product[i][k]}`);
+        }
+        else
+        {
+            alert(`${i}: ${product[i]}`);
+        }
     }
 
     </script>
