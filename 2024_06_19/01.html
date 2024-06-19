@@ -8,10 +8,21 @@
     <script>
         function changeObject()
         {
-            let obj = document.getElementById("campus");
-            obj.style.color = "green";
-            obj.style.background="blue";
-            obj.innerHTML ="CHANGE";
+            let objs = document.getElementsByTagName("h1");
+            // for(let i = 0; i < obj.length; i++) {
+            //     obj[i].style.color = "green";
+            //     obj[i].style.background = "blue";
+            //     obj[i].innerHTML = "CHANGE";
+            // }
+            for (let obj of objs) {
+                obj.style.color = "green";
+                obj.style.background = "blue";
+                obj.innerHTML = "CHANGE";
+            }
+            //let obj = document.getElementById("campus");
+            // obj.style.color = "green";
+            // obj.style.background="blue";
+            // obj.innerHTML ="CHANGE";
         }
     </script>
 
