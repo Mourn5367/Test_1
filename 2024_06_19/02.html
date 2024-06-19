@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         function changeObject()
+        {
+            let objs = document.querySelectorAll("h1");
+            for (let obj of objs) {
+                obj.style.color = "green";
+                obj.style.background = "blue";
+                obj.innerHTML = "CHANGE";
+            }
+            // for(let i = 0 ; i < objs.length;i++)
+            // {
+            //     objs[i].style.color = "green";
+            //     objs[i].style.background = "blue";
+            //     objs[i].innerHTML = "CHANGE";
+            // }
+        }
+    </script>78
+
+</head>
+<body onload="changeObject()">
+    <h1>한국 폴리텍대학</h1>
+    <h1 id="campus">서울 정수 캠퍼스 1학년</h1>
+    <h1>인공지능소프트웨어과</h1>
+</body>
+</html>
