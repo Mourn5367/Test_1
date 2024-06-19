@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function changeImage()
+        {
+            let obj = document.getElementById("img1");
+            //let obj = document.createElement("img");
+            obj.src = "https://cdn.dak.gg/er/images/tier/round/8.png"
+            obj.width = 50;
+            obj.clientHeight = 50;
+            let container = document.getElementById("image-container")
+            
+            // let body = document.body;
+            // body.appendChild(obj);
+        }
+    </script>
+
+</head>
+
+<body>
+    <img id = "img1">
+    <button type="button" onclick="changeImage()" >이미지 설정</button>
+</body>
+</html>
