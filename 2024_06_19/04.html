@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function divGradient()
+        {
+            let result ="";
+            for (let i = 0; i< 256; i++)
+            {
+                result += "<div></div>";
+            }
+            document.body.innerHTML = result;
+
+            let divs = document.body.querySelectorAll("div");
+
+            let count = 255;
+            for(let div of divs)
+            {
+                div.style.height = "1px";
+                div.style.backgroundColor = `rgb(${count},${count},${count})`;
+                // div.style.backgroundColor = "rgb("+i +","+i+","+i+")";
+                // ` 이거 안쓰면 저따구로 적어야함
+                count--;
+            }
+        }
+    </script>
+
+</head>
+<body onload="divGradient()">
+    
+</body>
+</html>
