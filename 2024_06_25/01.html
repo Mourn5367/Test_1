@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let count = 0;
+        function callbackTest(color)
+        {
+            let randomIndexArray = []
+            for (i=0; i<3; i++) {
+            randomNum = Math.floor(Math.random() * 256)
+            randomIndexArray.push(randomNum)
+            }
+            console.log(randomIndexArray)
+
+            alert("Hi, Callback");
+            Math.random()
+            count += 0.1;
+            document.body.style.backgroundColor = `rgba(${randomIndexArray[0]}, ${randomIndexArray[1]}, ${randomIndexArray[2]}, ${count})`;
+            
+        }
+        function originalBackgroundColor(color)
+        {
+            document.body.style.backgroundColor = color;
+            count = 0;
+        }
+    </script>
+    
+</head>
+<!-- 인라인모델을 사용한 이벤트 처리 방법 -->
+<body>
+    
+    <button onclick="callbackTest('yellow')" > 메시지 호출 </button>
+    <button onclick="originalBackgroundColor('white')" > 복귀 </button>
+</body>
+</html>
