@@ -12,7 +12,10 @@
                 src: "imgs/key_icon.png",
                 alt: "속성 설정 연습"
             }).css({
-                width: "5vw",
+                width: function(index)
+                {
+                    return ((index +1) * 5) +"vw"
+                },
                 height: "auto"  // 높이를 자동으로 설정
             });
         });
